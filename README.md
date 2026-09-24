@@ -83,8 +83,6 @@ Configuration is globally centralized in `shared/config.py`, powered by `pydanti
 - Python 3.11+
 - Node.js 18+
 - Active AWS Account (Bedrock access, S3, Textract, Transcribe)
-- Twilio / Meta WhatsApp API Auth Tokens
-- Redis server + PostgreSQL running on `localhost`
 
 ### Installation & Environment
 
@@ -96,7 +94,7 @@ pip install -r requirements.txt
 ```
 
 2. **Setup ENV Configuration**
-Create a `.env` file referencing `.env.example`. Make sure you insert keys for AWS (`aws_access_key_id`, `aws_secret_access_key`), OpenAI/Anthropic/Bhashini fallback, Twilio, Postgres, and Redis credentials.
+Create a `.env` file referencing `.env.example`. Make sure you insert keys for AWS (`aws_access_key_id`, `aws_secret_access_key`), and OpenAI/Anthropic credentials.
 
 3. **Start Core Services Individually (Development)**
 ```bash
